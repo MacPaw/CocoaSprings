@@ -174,4 +174,4 @@ For your convenience, most of the features described above are implemented in a 
 
 CocoaSprings is available under the MIT license.
 
-See the [LICENSE](https://github.com/MacPaw/FMPFeedbackForm/blob/master/LICENSE) file for more info.
+See the [LICENSE](https://github.com/MacPaw/CocoaSprings/blob/master/LICENSE) file for more info.
