@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7D1DF329DDB138003AE3B4 /* CocoaSprings in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7D1DF229DDB138003AE3B4 /* CocoaSprings */; };
+		2FA1365229DAE35600742889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA1365129DAE35600742889 /* AppDelegate.swift */; };
+		2FA1365429DAE35600742889 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA1365329DAE35600742889 /* ConfigViewController.swift */; };
+		2FA1365629DAE35600742889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1365529DAE35600742889 /* Assets.xcassets */; };
+		2FA1365929DAE35600742889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1365729DAE35600742889 /* Main.storyboard */; };
+		2FA136A529DB22D700742889 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA136A429DB22D700742889 /* AppConfig.swift */; };
+		2FB8007629DB3FE300989EC3 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8007529DB3FE300989EC3 /* SimulationViewController.swift */; };
+		2FB8007829DC251B00989EC3 /* MouseHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8007729DC251B00989EC3 /* MouseHandlingView.swift */; };
+		2FB8011929DC819700989EC3 /* DemoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8011829DC819700989EC3 /* DemoWindow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FA1364E29DAE35600742889 /* CocoaSpringsDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaSpringsDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA1365129DAE35600742889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FA1365329DAE35600742889 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		2FA1365529DAE35600742889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA1365829DAE35600742889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FA1365A29DAE35600742889 /* CocoaSpringsDemo_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocoaSpringsDemo_macOS.entitlements; sourceTree = "<group>"; };
+		2FA1366129DAE37500742889 /* CocoaSprings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CocoaSprings; path = ../..; sourceTree = "<group>"; };
+		2FA136A429DB22D700742889 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		2FB8007529DB3FE300989EC3 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		2FB8007729DC251B00989EC3 /* MouseHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHandlingView.swift; sourceTree = "<group>"; };
+		2FB8011829DC819700989EC3 /* DemoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWindow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FA1364B29DAE35600742889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7D1DF329DDB138003AE3B4 /* CocoaSprings in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA1364529DAE35600742889 = {
+			isa = PBXGroup;
+			children = (
+				2FA1366029DAE37500742889 /* Packages */,
+				2FA1365029DAE35600742889 /* CocoaSpringsDemo-macOS */,
+				2FA1364F29DAE35600742889 /* Products */,
+				2FA1366229DAE38800742889 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FA1364F29DAE35600742889 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FA1364E29DAE35600742889 /* CocoaSpringsDemo-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FA1365029DAE35600742889 /* CocoaSpringsDemo-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FA1365129DAE35600742889 /* AppDelegate.swift */,
+				2FA136A429DB22D700742889 /* AppConfig.swift */,
+				2FA1365329DAE35600742889 /* ConfigViewController.swift */,
+				2FB8007529DB3FE300989EC3 /* SimulationViewController.swift */,
+				2FB8007729DC251B00989EC3 /* MouseHandlingView.swift */,
+				2FB8011829DC819700989EC3 /* DemoWindow.swift */,
+				2FA1365529DAE35600742889 /* Assets.xcassets */,
+				2FA1365729DAE35600742889 /* Main.storyboard */,
+				2FA1365A29DAE35600742889 /* CocoaSpringsDemo_macOS.entitlements */,
+			);
+			path = "CocoaSpringsDemo-macOS";
+			sourceTree = "<group>";
+		};
+		2FA1366029DAE37500742889 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2FA1366129DAE37500742889 /* CocoaSprings */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		2FA1366229DAE38800742889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FA1364D29DAE35600742889 /* CocoaSpringsDemo-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FA1365D29DAE35600742889 /* Build configuration list for PBXNativeTarget "CocoaSpringsDemo-macOS" */;
+			buildPhases = (
+				2FA1364A29DAE35600742889 /* Sources */,
+				2FA1364B29DAE35600742889 /* Frameworks */,
+				2FA1364C29DAE35600742889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaSpringsDemo-macOS";
+			packageProductDependencies = (
+				2F7D1DF229DDB138003AE3B4 /* CocoaSprings */,
+			);
+			productName = "CocoaSpringsDemo-macOS";
+			productReference = 2FA1364E29DAE35600742889 /* CocoaSpringsDemo-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FA1364629DAE35600742889 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2FA1364D29DAE35600742889 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 2FA1364929DAE35600742889 /* Build configuration list for PBXProject "CocoaSpringsDemo-macOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FA1364529DAE35600742889;
+			productRefGroup = 2FA1364F29DAE35600742889 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FA1364D29DAE35600742889 /* CocoaSpringsDemo-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FA1364C29DAE35600742889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA1365629DAE35600742889 /* Assets.xcassets in Resources */,
+				2FA1365929DAE35600742889 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FA1364A29DAE35600742889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB8011929DC819700989EC3 /* DemoWindow.swift in Sources */,
+				2FB8007829DC251B00989EC3 /* MouseHandlingView.swift in Sources */,
+				2FA136A529DB22D700742889 /* AppConfig.swift in Sources */,
+				2FB8007629DB3FE300989EC3 /* SimulationViewController.swift in Sources */,
+				2FA1365429DAE35600742889 /* ConfigViewController.swift in Sources */,
+				2FA1365229DAE35600742889 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FA1365729DAE35600742889 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA1365829DAE35600742889 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FA1365B29DAE35600742889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FA1365C29DAE35600742889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2FA1365E29DAE35600742889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CocoaSpringsDemo-macOS/CocoaSpringsDemo_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macpaw.CocoaSpringsDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2FA1365F29DAE35600742889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CocoaSpringsDemo-macOS/CocoaSpringsDemo_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8EX82NJP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macpaw.CocoaSpringsDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FA1364929DAE35600742889 /* Build configuration list for PBXProject "CocoaSpringsDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA1365B29DAE35600742889 /* Debug */,
+				2FA1365C29DAE35600742889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FA1365D29DAE35600742889 /* Build configuration list for PBXNativeTarget "CocoaSpringsDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA1365E29DAE35600742889 /* Debug */,
+				2FA1365F29DAE35600742889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F7D1DF229DDB138003AE3B4 /* CocoaSprings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CocoaSprings;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2FA1364629DAE35600742889 /* Project object */;
+}
