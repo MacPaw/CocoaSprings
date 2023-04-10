@@ -93,24 +93,24 @@ private extension SpringMotionWindow {
 
         CVDisplayLinkSetOutputHandler(displayLink) { [weak self] _, inNow, _, _, _ in
             DispatchQueue.main.async { [weak self] in
-                guard let self, let destinationPoint else {
+                guard let self = self, let destinationPoint = self.destinationPoint else {
                     self?.stopMotion()
                     return
                 }
                 
-                let currentState = currentMotionState ?? .init(position: frame.center, velocity: .zero)
-                let nextState = motionPhysics.calculateNextState(from: currentState, destinationPoint: destinationPoint)
+                let currentState = self.currentMotionState ?? .init(position: self.frame.center, velocity: .zero)
+                let nextState = self.motionPhysics.calculateNextState(from: currentState, destinationPoint: destinationPoint)
                 
                 if abs(nextState.velocity.horizontal) < 0.01 && abs(nextState.velocity.vertical) < 0.01 {
-                    stopMotion()
+                    self.stopMotion()
                     return
                 }
                 
-                self.setFrame(.init(x: nextState.position.x - frame.width / 2,
-                                    y: nextState.position.y - frame.height / 2,
-                                    width: frame.width,
-                                    height: frame.height), display: false)
-                currentMotionState = nextState
+                self.setFrame(.init(x: nextState.position.x - self.frame.width / 2,
+                                    y: nextState.position.y - self.frame.height / 2,
+                                    width: self.frame.width,
+                                    height: self.frame.height), display: false)
+                self.currentMotionState = nextState
             }
             
             return kCVReturnSuccess
