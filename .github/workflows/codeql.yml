@@ -27,12 +27,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup latest Swift version
-        uses: swift-actions/setup-swift@v1
+#      - name: Setup latest Swift version
+#        uses: swift-actions/setup-swift@v1
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
+          swift:
           languages: ${{ matrix.language }}
 
       - name: Print swift version
