@@ -11,6 +11,7 @@ import AppKit
 
 open class SpringMotionWindow: NSWindow {
 
+    /// Configuration that adjusts the spring physics behind the animation.
     public var configuration: SpringConfiguration = .default {
         didSet {
             motionPhysics = .init(configuration: configuration, timeStep: 0.008)
@@ -33,12 +34,17 @@ open class SpringMotionWindow: NSWindow {
 // MARK: - API
 public extension SpringMotionWindow {
     
+    /// Moves the window to the specified point with spring animation.
+    ///
+    /// - Parameter point: a `CGPoint` that defines the window's destination and represents the window's center point.
     func move(to point: NSPoint) {
         destinationPoint = point
     }
 
-    /// Starts following the given window.
-    /// `offsetFromCenter` is the difference between this window's center and the anchor window's center.
+    /// Starts following the given window with a certain offset from its center.
+    ///
+    /// - Parameter anchorWindow: an `NSWindow` that this window will follow.
+    /// - Parameter offsetFromCenter: the difference between this window's center and the anchor window's center.
     func pinToWindow(_ anchorWindow: NSWindow, offsetFromCenter: NSPoint) {
         unpinFromWindow()
         move(to: anchorWindow.frame.center + offsetFromCenter)

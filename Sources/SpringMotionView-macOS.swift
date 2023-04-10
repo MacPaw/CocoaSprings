@@ -11,14 +11,21 @@ import AppKit
 
 open class SpringMotionView: NSView {
     
-    public var onPositionUpdate: ((NSPoint) -> Void)?
-
+    /// Configuration that adjusts the spring physics behind the animation.
     public var configuration: SpringConfiguration = .default {
         didSet {
             motionPhysics = .init(configuration: configuration, timeStep: timeStep)
         }
     }
     
+    /// A closure that is called on every step of animation.
+    /// Within it you should update any relevant constraints to position the view according
+    /// to the `CGPoint` parameter passed into the closure. This point represents the center of the view.
+    public var onPositionUpdate: ((NSPoint) -> Void)?
+    
+    /// Moves the view to the specified point with spring animation.
+    ///
+    /// - Parameter point: a `CGPoint` that defines the view's destination and represents the view's center point.
     public func move(to point: NSPoint) {
         destinationPoint = point
     }

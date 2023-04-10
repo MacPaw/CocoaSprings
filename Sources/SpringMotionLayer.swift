@@ -20,7 +20,6 @@ open class SpringMotionLayer: CALayer {
     /// Moves the layer to the specified point with spring animation.
     ///
     /// - Parameter point: a `CGPoint` that defines the layer's destination and represents the layer's center point.
-    /// - Parameter callback: a closure to call when spring motion has stopped.
     public func move(to point: CGPoint) {
         motionStates = motionPhysics.calculateAllStates(
             from: getCurrentMotionState(),
