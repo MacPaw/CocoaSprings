@@ -21,6 +21,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        include:
+          - image: swift:5.7.3-slim
         language: [ 'swift' ]
 
     steps:
