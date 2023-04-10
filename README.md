@@ -40,6 +40,9 @@ Add it as a sublayer to the desired parent layer and call the `move(to:)` method
 Below is an example of a macOS `NSView` subclass that hosts a `SpringMotionLayer` and moves it to whichever point inside it gets clicked:
 
 ```swift
+import AppKit
+import CocoaSprings
+
 final class ClickableView: NSView {
     
     override init(frame frameRect: NSRect) {
@@ -86,6 +89,9 @@ Due to the fact that views are usually positioned using constraints, the client 
 Consider an example iOS snippet below, assume we've set up `SpringMotionView` and its constraints via Interface Builder: 
 
 ```swift
+import UIKit
+import CocoaSprings
+
 final class ViewController: UIViewController {
 
     @IBOutlet weak var springMotionView: SpringMotionView!
@@ -124,7 +130,7 @@ final class ViewController: UIViewController {
 - Call `unpinFromWindow()` to stop following a previously followed window.
 
 ```swift
-import Cocoa
+import AppKit
 import CocoaSprings
 
 final class ViewController: NSViewController {
