@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  SpringMotionView.swift
+//
 //
 //  Created by Anton Barkov on 29.03.2023.
 //
@@ -57,21 +57,21 @@ private extension SpringMotionView {
 
         CVDisplayLinkSetOutputHandler(displayLink) { [weak self] _, inNow, _, _, _ in
             DispatchQueue.main.async { [weak self] in
-                guard let self, let destinationPoint else {
+                guard let self = self, let destinationPoint = self.destinationPoint else {
                     self?.stopMotion()
                     return
                 }
                 
-                let currentState = currentMotionState ?? .init(position: frame.center, velocity: .zero)
-                let nextState = motionPhysics.calculateNextState(from: currentState, destinationPoint: destinationPoint)
+                let currentState = self.currentMotionState ?? .init(position: self.frame.center, velocity: .zero)
+                let nextState = self.motionPhysics.calculateNextState(from: currentState, destinationPoint: destinationPoint)
                 
                 if abs(nextState.velocity.horizontal) < 0.01 && abs(nextState.velocity.vertical) < 0.01 {
-                    stopMotion()
+                    self.stopMotion()
                     return
                 }
                 
-                onPositionUpdate?(nextState.position)
-                currentMotionState = nextState
+                self.onPositionUpdate?(nextState.position)
+                self.currentMotionState = nextState
             }
             
             return kCVReturnSuccess
