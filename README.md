@@ -4,10 +4,10 @@
 - [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [SpringConfiguration](#springconfiguration)
   - [SpringMotionLayer](#springmotionlayer)
   - [SpringMotionView](#springmotionview)
   - [SpringMotionWindow](#springmotionwindow)
-  - [SpringConfiguration](#springconfiguration)
 - [Demo](#demo)
 - [License](#license)
 
@@ -30,6 +30,18 @@ dependencies: [
 ```
 
 ## Usage
+
+### SpringConfiguration
+
+The physics of CocoaSprings components is configured via the `SpringConfiguration` struct. It has two properties: 
+- `angularFrequency` controls how fast an object moves towards its destination. The higher the value, the faster an object moves. Default value is `7.5`.
+- `dampingRatio` controls how fast the spring motion decays. The lower the value, the less velocity is lost upon each oscillation. The value must range from 0 to 1, default is `0.5`.
+
+Set the configuration on any component to adjust its physics:
+```swift
+let layer = SpringMotionLayer()
+layer.configuration = SpringConfiguration(angularFrequency: 10, dampingRatio: 0.7)
+```
 
 ### SpringMotionLayer
 
@@ -158,18 +170,6 @@ final class ViewController: NSViewController {
 ```
 
 ![View Example](https://github.com/MacPaw/CocoaSprings/blob/main/Screenshots/window.gif)
-
-### SpringConfiguration
-
-Spring physics of CocoaSpring components is configured via the `SpringConfiguration` struct. It has two properties: 
-- `angularFrequency` controls how fast an object moves towards its destination. The higher the value, the faster an object moves. Default value is `7.5`.
-- `dampingRatio` controls how fast the spring motion decays. The lower the value, the less velocity is lost upon each oscillation. The value must range from 0 to 1, default is `0.5`.
-
-Set the configuration on any component to adjust its physics:
-```swift
-let layer = SpringMotionLayer()
-layer.configuration = SpringConfiguration(angularFrequency: 10, dampingRatio: 0.7)
-```
 
 ## Demo
 For your convenience, most of the features described above are implemented in a demo project in this repository. Please refer to it for package usage examples.
