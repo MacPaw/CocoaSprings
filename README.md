@@ -17,7 +17,7 @@ CocoaSprings is a lightweight Swift package that simulates damped spring physics
 
 ![About](https://github.com/MacPaw/CocoaSprings/blob/main/Screenshots/about.gif)
 
-The math behind the animations is based on [this excellent blog post by Ryan Juckett](https://www.ryanjuckett.com/damped-springs/). In it, he explains the algorithm he uses for moving third-person cameras in video games, provided that a camera's motion should be smooth and continuos despite the possible aburpt changes in the player's movement. This is the exact effect we wanted to achieve for animating UI elements inside our apps, so we applied the same algorithm to move layers, views and windows on the 2D plane of the user interface.
+The math behind the animations is based on [this excellent blog post by Ryan Juckett](https://www.ryanjuckett.com/damped-springs/). In it, he explains the algorithm he uses for moving third-person cameras in video games, provided that a camera's motion should be smooth and continuous despite the possible abrupt changes in the player's movement. This is the exact effect we wanted to achieve for animating UI elements inside our apps, so we applied the same algorithm to move layers, views, and windows on the 2D plane of the user interface.
 
 ## Installation
 
@@ -34,8 +34,8 @@ dependencies: [
 ### SpringConfiguration
 
 The physics of CocoaSprings components is configured via the `SpringConfiguration` struct. It has two properties: 
-- `angularFrequency` controls how fast an object moves towards its destination. The higher the value, the faster an object moves. Default value is `7.5`.
-- `dampingRatio` controls how fast the spring motion decays. The lower the value, the less velocity is lost upon each oscillation. The value must range from 0 to 1, default is `0.5`.
+- `angularFrequency` controls how fast an object moves towards its destination. The higher the value, the faster an object moves. The default value is `7.5`.
+- `dampingRatio` controls how fast the spring motion decays. The lower the value, the less velocity is lost upon each oscillation. The value must range from 0 to 1; the default is `0.5`.
 
 Set the configuration on any component to adjust its physics:
 ```swift
