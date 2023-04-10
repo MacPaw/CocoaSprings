@@ -36,8 +36,8 @@ jobs:
         with:
           swift-version: "5.7.3"
 
-      - name: Build library
-        run: swift build
+      - name: Print swift version
+        run: swift --version
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
