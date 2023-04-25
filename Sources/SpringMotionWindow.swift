@@ -61,9 +61,9 @@ public extension SpringMotionWindow {
 }
 
 // MARK: - Mouse events
-public extension SpringMotionWindow {
+extension SpringMotionWindow {
 
-    override func mouseDown(with event: NSEvent) {
+    override open func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
         // Stop window from moving if the user grabbed it.
         if isMovableByWindowBackground {
@@ -71,7 +71,7 @@ public extension SpringMotionWindow {
         }
     }
 
-    override func mouseUp(with event: NSEvent) {
+    override open func mouseUp(with event: NSEvent) {
         super.mouseUp(with: event)
         // Continue movement after the user lets go.
         if isMovableByWindowBackground {

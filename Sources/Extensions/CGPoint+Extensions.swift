@@ -11,7 +11,7 @@ import UIKit
 import AppKit
 #endif
 
-public extension CGPoint {
+extension CGPoint {
     
     var nsValue: NSValue {
         #if os(iOS)
