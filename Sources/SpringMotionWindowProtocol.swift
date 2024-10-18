@@ -53,7 +53,7 @@ public extension SpringMotionWindowProtocol {
 }
 
 // MARK: - Start/stop motion
-public extension SpringMotionWindowProtocol {
+private extension SpringMotionWindowProtocol {
     
     func startMotion() {
         guard displayLink == nil,
