@@ -10,7 +10,7 @@ import Foundation
 /// Implements the physics of spring motion.
 ///
 /// The math is inspired by [this great post](https://www.ryanjuckett.com/damped-springs).
-public final class SpringMotionPhysics {
+final class SpringMotionPhysics {
     
     private let posPosCoef: Double
     private let posVelCoef: Double
