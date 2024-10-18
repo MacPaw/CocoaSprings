@@ -29,7 +29,7 @@ open class SpringMotionPanel: NSPanel, SpringMotionWindowProtocol {
 }
 
 // MARK: - Mouse events
-extension SprintMotionPanel {
+extension SpringMotionPanel {
     
     override open func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
