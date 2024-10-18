@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class SpringMotionState {
+public final class SpringMotionState {
     
     struct Velocity {
         
