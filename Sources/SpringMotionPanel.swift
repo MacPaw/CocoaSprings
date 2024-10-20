@@ -7,6 +7,7 @@
 
 #if canImport(AppKit)
 
+import AppKit
 
 open class SpringMotionPanel: NSPanel {
 
