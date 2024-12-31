@@ -66,7 +66,7 @@ public extension SpringMotionPanel {
     override func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
         // Stop window from moving if the user grabbed it.
-        if isMovableByWindowBackground {
+        if isMovableByWindowBackground, anchorWindowFrameObservation != nil {
             stopMotion()
         }
     }
@@ -74,7 +74,7 @@ public extension SpringMotionPanel {
     override func mouseUp(with event: NSEvent) {
         super.mouseUp(with: event)
         // Continue movement after the user lets go.
-        if isMovableByWindowBackground {
+        if isMovableByWindowBackground, anchorWindowFrameObservation != nil {
             startMotion()
         }
     }
