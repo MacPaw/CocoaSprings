@@ -1,3 +1,5 @@
+![CocoaSprings](.github/header.png)
+
 ![CocoaSprings](https://github.com/MacPaw/CocoaSprings/blob/main/Screenshots/header.gif)
 
 ## Contents
